@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     setError("");
     try {
       const response = await axios.get(
-        `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${query}&page=100`
+        `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${query}`
       );
       console.log(response);
       if (response.data.Response === "True") {
