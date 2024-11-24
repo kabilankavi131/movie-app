@@ -45,7 +45,7 @@ const Home: React.FC = () => {
       console.log("Imsid", query);
 
       const response = await axios.get(
-        `http://localhost:5000/searchmovies?movie=${query}`
+        `https://kabilan-movie-app-server.vercel.app/searchmovies?movie=${query}`
       );
       console.log(response);
       if (response.status === 200) {
